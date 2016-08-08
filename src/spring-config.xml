@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       <bean id="b1" class="aaa.bbb.ccc.Bean1" c:my-super-prop1="1" c:my-super-prop_2="2" c:my-super-prop3="3">
+          <!-- <constructor-arg name="mySuperProp1" value="1"/>
+           <constructor-arg name="mySuperProp_2" value="2"/>
+           <constructor-arg name="mySuperProp3" value="3"/>-->
+       </bean>
+    <bean id="b2" class="aaa.bbb.ccc.Bean1" c:mySuperProp1="11">
+       <!-- <constructor-arg name="mySuperProp1" value="11"/>-->
+        <constructor-arg name="mySuperProp_2" value="22"/>
+        <constructor-arg name="mySuperProp3" value="33"/>
+    </bean>
+    <bean id="b3" class="aaa.bbb.ccc.Bean2" p:mySuperProp1="111" p:mySuperProp_2="222" p:mySuperProp3="333" >
+        <!--<property name="mySuperProp3" value="333333333333333"/>-->
+    </bean>
+    <bean id="b4" class="aaa.bbb.ccc.Bean2" p:my-super-prop1="1111" p:my-super-prop_2="2222" p:my-super-prop3="3333"/>
+</beans>
