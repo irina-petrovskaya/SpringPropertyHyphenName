@@ -12,7 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class RunMe {
     public static void main(String[] args) {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-config.xml");
-        Bean1 bean11 = (Bean1) ctx.getBean("b1");
+        Bean1 bean11 = (Bean1) ctx.getBean("b1!!!!bean-test=name");
         Bean1 bean12 = (Bean1) ctx.getBean("b2");
         Bean2 bean21 = (Bean2) ctx.getBean("b3");
         Bean2 bean22 = (Bean2) ctx.getBean("b4");
