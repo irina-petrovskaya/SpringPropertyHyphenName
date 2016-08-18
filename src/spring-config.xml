@@ -17,7 +17,5 @@
         <!--<property name="mySuperProp3" value="333333333333333"/>-->
     </bean>
     <bean id="b4" class="aaa.bbb.ccc.Bean2" p:my-super-prop1="1111" p:my-super-prop_2="2222" p:my-super-prop3="3333"/>
-    <bean id="stringBean" class="java.lang.String" c:value="3">
-
-    </bean>
+    <bean id="stringBean" class="java.lang.String" c:value="3"/>
 </beans>
